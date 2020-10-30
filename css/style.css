@@ -348,6 +348,7 @@ textarea {
 
 img {
     vertical-align: middle;
+    display: block;
 }
 
 fieldset {
@@ -366,13 +367,102 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
-
-
 /* reset css end */
 
+/* fonts */
+@font-face {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Verdana Regular'), local('Veradana-Regular'),
+         url('../fonts/Verdana.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/Verdana.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-family: 'Verdana';
+    font-style: bold;
+    font-weight: 700;
+    src: local('Verdana Bold'), local('Veradana-Bold'),
+         url('../fonts/Verdana-Bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/Verdana-Bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* fonts end */
+
+body{
+    font-family: 'Verdana';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: normal;
+    color:#000000;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 /* header style start */
-
-
-
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding-bottom: 24px;
+    background: #ffffff;
+}
+.header__logo{
+    margin-top: 22px;
+}
+.header__logo-pic{
+    width: 135px;
+    height: 75px;
+}
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__item{
+    margin-right: 40px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+.header__item:nth-child(5){
+    margin-right: 77px;
+    position: relative;
+}
+.header__item:nth-child(5):after{
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #000;
+    top: 0;
+    right: -37px;
+}
+.header__link{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.header__link:hover, .header__link:active, .header__link:focus{
+    color: #000000;
+    text-decoration: none;
+    opacity: .6;
+}
 /* header style end */
+
+/* intro start */
+.intro{
+    margin-top: 122px;
+}
+/* intro end */
