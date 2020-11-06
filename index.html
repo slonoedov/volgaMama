@@ -12,11 +12,20 @@
     <!-- header -->
     <header class="header">
         <div class="container-fluid header__wrapper">
+            <div class="header__burger burger">
+				<span class="burger__line burger__line-top"></span>
+				<span class="burger__line burger__line-middle"></span>
+				<span class="burger__line burger__line-bottom"></span>
+			</div>
             <div class="header__logo">
 				<a href="!#" class="header__logo-link">
 					<img src="./image/logo.png" alt="Discover Amazing places in Japan" class="header__logo-pic">
 				</a>
-				</div>
+                </div>
+                        <div class="cart">
+          
+          <a href="/cart.html" class="cart__link"><img src="./image/cart.svg" alt="Корзина" class="cart__icon"></a>
+         </div>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
@@ -41,7 +50,12 @@
                         <a href="!#" class="header__link">Корзина <span class="cart__counter">0</span></a>
                     </li>
                 </ul>
+                <div class="header__nav-close">
+                    <span class="header__nav-close-line"></span>
+                    <span class="header__nav-close-line"></span>
+                </div>
             </nav>
+
         </div>
     </header>
     
@@ -342,6 +356,26 @@
             console.log('УБРАЛ МЫШЬ');
         })
     });
+    (function (){
+    const burger = document.querySelector('.burger');
+    const close = document.querySelector('.header__nav-close');
+    let menuLinks = document.querySelectorAll('.header__link');
+    console.log(burger);
+    burger.addEventListener('click', () => {
+        document.querySelector('.header__nav').classList.add('header__nav_active');
+    });
+    close.addEventListener('click', ()=> {
+        document.querySelector('.header__nav').classList.remove('header__nav_active');
+    });
+    if(window.innerWidth <= 767){
+        for(let i = 0; i < menuLinks.length; i++){
+            menuLinks[i].addEventListener('click', ()=>{
+                document.querySelector('.header__nav').classList.remove('header__nav_active');
+            })
+        }
+    }
+}());
+
 </script>
 </body>
 </html>
