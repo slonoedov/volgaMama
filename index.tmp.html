@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style2.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Volga Mama</title>
 </head>
 <body>
-
+    <!-- header -->
     <header class="header fixed-top">
         <div class=" header__wrapper">
             <div class="header__burger burger">
@@ -59,35 +59,64 @@
 
         </div>
     </header>
-    <!-- intro -->
+    
+    <!-- /header -->
+<!-- intro -->
     <section class="intro">
-        <div class="container-fluid">
+        <div class="section__wrapper">
             <div class="row">
-                <div class="col-12">
-                    <img src="./image/slide.jpg" alt="Volga Mama" class="intro-pic">
+                <div class="col-sm-12">
+                    <div class="slider">
+                        <img src="./image/slide.jpg" alt="intro" class="slider-pic">
+                    </div>
+                </div>
+            </div>
+        <!-- <div class="slidercontainer">
+            <div class="unslider">
+              <ul>
+                
+                  <li style="background: url('./image/slide.jpg') 100% 100%">
+                    
+                    <a href="!#"></a>
+                   
+                  </li>
+                  <li style="background: url('./image/slide2.jpg') 100% 100%">
+                    
+                    <a href="!#"></a>
+                   
+                  </li>
+                  <li style="background: url('./image/slide3.jpg') 100% 100%">
+                    
+                    <a href="!#"></a>
+                   
+                  </li>
+                
+              </ul>
+            </div>
+        </div> -->
+        </div>
+    </section>
+
+<!-- /intro -->
+
+<!-- instagram -->
+<section class="instagram">
+    <div class="section__wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="volga__title section__title">
+                    @VOLGAMAMABRAND
+                </h2>
+                <div class="insta_img">
+                    <img src="./image/insta.jpg" alt="" class="insta-pic">
                 </div>
             </div>
         </div>
-    </section>
-    <!-- intro end -->
+    </div>
+</section>
+<!-- /instagram -->
 
-    <!-- insta -->
-    <section class="instagram">
-        <div class="container-fluid">
-            <h2 class="section__title volga__title">
-                @VOLGAMAMABRAND
-            </h2>
-            <div class="row">
-                <div class="col-12">
-                    <img src="./image/insta.jpg" alt="@VOLGAMAMABRAND" class="insta-pic">
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- insta end-->
-
-
-<!-- blog -->
+<!-- live -->
 <section class="live">
     <div class="container">
         <h2 class="volga__title section__title">
@@ -122,16 +151,16 @@
         <hr>
     </div>
 </section>
-<!-- blog end -->
+<!-- /live -->
 
-<!-- products  -->
+<!-- products -->
 <section class="products">
     <div class="container">
         <h2 class="section__title volga__title">
             ПОПУЛЯРНЫЕ ТОВАРЫ
         </h2>
         <div class="row">
-            <div class="col-md-3 col-6">
+            <div class="col-xl-3 col-6">
                 <div class="product__card">
                     <div class="product__img">
                         <img src="./image/product.jpg" alt="ПОПУЛЯРНЫЕ ТОВАРЫ" class="product__img-pic">
@@ -157,7 +186,7 @@
                     <p class="product__price">1300Р</p>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-xl-3 col-6">
                 <div class="product__card">
                     <div class="product__img">
                         <img src="./image/product.jpg" alt="ПОПУЛЯРНЫЕ ТОВАРЫ" class="product__img-pic">
@@ -166,7 +195,7 @@
                     <p class="product__price">1300Р</p>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-xl-3 col-6">
                 <div class="product__card">
                     <div class="product__img">
                         <img src="./image/product.jpg" alt="ПОПУЛЯРНЫЕ ТОВАРЫ" class="product__img-pic">
@@ -175,7 +204,7 @@
                     <p class="product__price">1300Р</p>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-xl-3 col-6">
                 <div class="product__card">
                     <div class="product__img">
                         <img src="./image/product.jpg" alt="ПОПУЛЯРНЫЕ ТОВАРЫ" class="product__img-pic">
@@ -184,7 +213,7 @@
                     <p class="product__price">1300Р</p>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-xl-3 col-6">
                 <div class="product__card">
                     <div class="product__img">
                         <img src="./image/product.jpg" alt="ПОПУЛЯРНЫЕ ТОВАРЫ" class="product__img-pic">
@@ -193,7 +222,7 @@
                     <p class="product__price">1300Р</p>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-xl-3 col-6">
                 <div class="product__card">
                     <div class="product__img">
                         <img src="./image/product.jpg" alt="ПОПУЛЯРНЫЕ ТОВАРЫ" class="product__img-pic">
@@ -202,7 +231,7 @@
                     <p class="product__price">1300Р</p>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-xl-3 col-6">
                 <div class="product__card">
                     <div class="product__img">
                         <img src="./image/product.jpg" alt="ПОПУЛЯРНЫЕ ТОВАРЫ" class="product__img-pic">
@@ -211,7 +240,7 @@
                     <p class="product__price">1300Р</p>
                 </div>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-xl-3 col-6">
                 <div class="product__card">
                     <div class="product__img">
                         <img src="./image/product.jpg" alt="ПОПУЛЯРНЫЕ ТОВАРЫ" class="product__img-pic">
@@ -230,11 +259,11 @@
     </div>
 
 </section>
-<!-- products end -->
+<!-- /products -->
 
 <!-- subscribe -->
 <section class="subscribe">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-12">
                 <h2 class="subscribe__title">
@@ -253,43 +282,101 @@
         </div>
     </div>
 </section>
-<!-- subscribe end -->
-    <script>
+<!-- /subscribe -->
 
-        document.addEventListener('DOMContentLoaded', function(){
-            let card = document.querySelector('.product__card');
-             const card_desc = document.querySelector('.card__desc');
+<!-- footer -->
+<footer class="footer">
+<div class="container">
+    <div class="footer__menu-wrap">    
+        <div class="row">
+        <div class="col-lg-2">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><h3 class="footer__menu-title">Помощь</h3></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">Доставка</a></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">Оплата</a></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">Таблица размеров</a></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">Возврат</a></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">Условия соглашения</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-lg-2">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><h3 class="footer__menu-title">Волга мама</h3></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">О бренде</a></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">Команда</a></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">Наш блог</a></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">Сотрудничество</a></li>
+                    <li class="footer__menu-item"><a href="!#" class="footer__menu-link">Адреса магазинов</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-lg-2">
+            <nav class="footer__nav">
+                <ul class="footer__menu">
+                    <li class="footer__menu-item"><h3 class="footer__menu-title">Контакты</h3></li>
+                    <li class="footer__menu-item"><a href="tel:8 (800) 333-33-33" class="footer__menu-link">8 (800) 333-33-33</a></li>
+                    <li class="footer__menu-item"><a href="https://wa.me/79275555555" class="footer__menu-link"> WhatsApp: +7 (927) 555-55-55</a></li>
+                    <li class="footer__menu-item"><a href="mailto:volgamamaorg@gmail.com" class="footer__menu-link"> volgamamaorg@gmail.com</a></li>
+                    <li class="footer__menu-item soc"><a href="!#" class="soc__link"><img src="./image/vk.png" alt="vk" class="soc__icon"></a><a href="!#" class="soc__link"><img src="./image/f.png" alt="facebook" class="soc__icon"></a> <a href="!#" class="soc__link"><img src="./image/inst.png" alt="instagram" class="soc__icon"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-lg-4">
+            <div class="footer__logo">
+                <a href="!#"><img src="./image/footer-logo.png" alt="Volga Mama" class="footer__logo-pic"></a>
+            </div>
             
-    
-            card.addEventListener('mouseover', () => {
-                console.log('НАВЁЛ МЫШЬ');
-                 card_desc.classList.add('card__desc-active');
+        </div>
+    </div></div>
+
+<div class="row">
+    <div class="col-12">
+        <p class="copy">Volga Mama © 2018 </p>
+    </div>
+</div>
+</div>
+</footer>
+<!-- /footer -->
+<!-- menu- -->
+<script>
+
+    document.addEventListener('DOMContentLoaded', function(){
+        let card = document.querySelector('.product__card');
+         const card_desc = document.querySelector('.card__desc');
+        
+
+        card.addEventListener('mouseover', () => {
+            console.log('НАВЁЛ МЫШЬ');
+             card_desc.classList.add('card__desc-active');
+        })
+        card.addEventListener('mouseout', () => {
+            card_desc.classList.remove('card__desc-active');
+            console.log('УБРАЛ МЫШЬ');
+        })
+    });
+    (function (){
+    const burger = document.querySelector('.burger');
+    const close = document.querySelector('.header__nav-close');
+    let menuLinks = document.querySelectorAll('.header__link');
+    console.log(burger);
+    burger.addEventListener('click', () => {
+        document.querySelector('.header__nav').classList.add('header__nav_active');
+    });
+    close.addEventListener('click', ()=> {
+        document.querySelector('.header__nav').classList.remove('header__nav_active');
+    });
+    if(window.innerWidth <= 767){
+        for(let i = 0; i < menuLinks.length; i++){
+            menuLinks[i].addEventListener('click', ()=>{
+                document.querySelector('.header__nav').classList.remove('header__nav_active');
             })
-            card.addEventListener('mouseout', () => {
-                card_desc.classList.remove('card__desc-active');
-                console.log('УБРАЛ МЫШЬ');
-            })
-        });
-        (function (){
-        const burger = document.querySelector('.burger');
-        const close = document.querySelector('.header__nav-close');
-        let menuLinks = document.querySelectorAll('.header__link');
-        console.log(burger);
-        burger.addEventListener('click', () => {
-            document.querySelector('.header__nav').classList.add('header__nav_active');
-        });
-        close.addEventListener('click', ()=> {
-            document.querySelector('.header__nav').classList.remove('header__nav_active');
-        });
-        if(window.innerWidth <= 767){
-            for(let i = 0; i < menuLinks.length; i++){
-                menuLinks[i].addEventListener('click', ()=>{
-                    document.querySelector('.header__nav').classList.remove('header__nav_active');
-                })
-            }
         }
-    }());
-    
-    </script>
+    }
+}());
+
+</script>
 </body>
 </html>
