@@ -95,28 +95,40 @@
         </h2>
         <div class="row">
             <div class="col-6 blog__wrapper">
-                <div class="live__img">
-                    <img src="./image/live1.jpg" alt="Blog image" class="live__img-pic">
-                    <h3 class="live__img-title volga__title">СВИТШОТЫ СЕЗОН ОСЕНЬ 2018</h3>
-                </div>
+                <a href="!#" class="live__link">
+                    <div class="live__img">
+                        <img src="./image/live1.jpg" alt="Blog image" class="live__img-pic">
+                        <h3 class="live__title volga__title">СВИТШОТЫ СЕЗОН ОСЕНЬ 2018</h3>
+                    </div>
+                </a>
+ 
             </div>
             <div class="col-6 blog__wrapper">
-                <div class="live__img">
-                    <img src="./image/live2.jpg" alt="Blog image" class="live__img-pic">
-                    <h3 class="live__img-title volga__title">ПАРАЭКСПЕДИЦИЯ ПЕРЕВАЛ ДЯТЛОВА</h3>
-                </div>
+                <a href="!#" class="live__link">
+                    <div class="live__img">
+                        <img src="./image/live2.jpg" alt="Blog image" class="live__img-pic">
+                        <h3 class="live__title volga__title">ПАРАЭКСПЕДИЦИЯ ПЕРЕВАЛ ДЯТЛОВА</h3>
+                    </div>
+                </a>
+ 
             </div>
             <div class="col-6 blog__wrapper">
-                <div class="live__img">
-                    <img src="./image/live3.jpg" alt="Blog image" class="live__img-pic">
-                    <h3 class="live__img-title volga__title">ЛУКБУК АПРЕЛЬ 2018</h3>
-                </div>
+                <a href="!#" class="live__link">
+                    <div class="live__img">
+                        <img src="./image/live3.jpg" alt="Blog image" class="live__img-pic">
+                        <h3 class="live__title volga__title">ЛУКБУК АПРЕЛЬ 2018</h3>
+                    </div>
+                </a>
+
             </div>
             <div class="col-6 blog__wrapper">
-                <div class="live__img">
-                    <img src="./image/live4.jpg" alt="Blog image" class="live__img-pic">
-                    <h3 class="live__img-title volga__title">LONGBOARDS BASE X VM®</h3>
-                </div>
+                <a href="!#" class="live__link">
+                    <div class="live__img">
+                        <img src="./image/live4.jpg" alt="Blog image" class="live__img-pic">
+                        <h3 class="live__title volga__title">LONGBOARDS BASE X VM®</h3>
+                    </div>
+                </a>
+
             </div>
         </div>
         <hr>
@@ -289,6 +301,17 @@
             }
         }
     }());
+    (function(){
+    const header = document.querySelector('.header');
+    // console.log(header);
+    window.addEventListener('scroll', function() {
+   if(window.pageYOffset > 70){
+       header.classList.add('header-scroll');
+   } else{
+       header.classList.remove('header-scroll');
+   }
+});
+}());
     
     </script>
 </body>

@@ -52,11 +52,13 @@ height: auto;
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
 }
 .header__logo{
-    margin-top: 22px;
+    margin-left:5%;
 }
 .header__logo-pic{
-    width: 132px;
-    height: 80px;
+  margin-top: 22px;
+  width: 125px;
+  m
+    
 }
 .header__nav{
     margin-right: 15%;
@@ -128,6 +130,14 @@ height: auto;
   .cart__counter{
       display: none;
   }
+  .header-scroll img{
+    width: 60px;
+    height: auto;
+    margin: 0;
+  }
+  .header-scroll{
+    padding-bottom: 0;
+  }
 /* intro */
   .intro{
     margin-top: 122px;
@@ -154,6 +164,17 @@ height: auto;
 }
 .live__img-pic{
     margin-bottom: 15px;
+}
+.live__link {
+  color:#000;
+  transition: .3s;
+}
+.live__link:hover, .live__link:focus, .live__link:active{
+  color: #000;
+  opacity: .5;
+}
+.live__title{
+  margin-left: 5px;
 }
   /* blog end */
 
@@ -186,11 +207,11 @@ height: auto;
     max-width: 200px;
     margin: 0 auto;
     padding: 10px 0;
-    transition: .3s;
+    transition: .3s all;
 }
 .product__more-link:hover, .product__more-link:active, .product__more-link:focus{
-    color:#000;
-    opacity: .8;
+  background: #000;
+    color:#fff;
     text-decoration: none;
 }
   /* products end */
@@ -230,7 +251,13 @@ height: auto;
   background: transparent;
   border: 2px solid #fff;
   padding: 13px;
+  transition: .3s all;
 }
+ .subscribe-form__btn:hover,  .subscribe-form__btn:active,  .subscribe-form__btn:focus{
+  color:#fff;
+  background: #000;
+  border: 2px solid #000;
+ }
 .subscribe-form__field{
   font-size: 12px;
   color: #000;
